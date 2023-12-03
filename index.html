@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Warna latar belakang halaman */
+    }
+  
+    .container {
+      padding: 3rem;
+      background-color: #ffffff; /* Warna latar belakang konten */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan kotak untuk konten */
+      border-radius: 10px; /* Membuat konten memiliki sudut lengkung */
+    }
+  
+    .h1 {
+      font-size: 3rem;
+      padding: 2rem 0;
+      text-align: center;
+      color: #333333; /* Warna teks judul */
+    }
+  
+    .thumbnail {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px; /* Membuat sudut gambar menjadi lengkung */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan kotak untuk gambar */
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .thumbnail img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .thumbnail:hover {
+      transform: scale(1.05); /* Efek scaling saat gambar dihover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan sedikit lebih besar saat dihover */
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  
+    .img-container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <h1 class="h1">Image Gallery</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      <!-- Image 1 -->
+      <div class="col">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="/img/2.jpg" alt="image" class="image">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="col">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="/img/design1.jpg" alt="image" class="image">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="col">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="/img/Kinerja Dosen2.jpg" alt="image" class="image">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+            <!-- Image 4 -->
+            <div class="col">
+              <div class="thumbnail">
+                <div class="img-container">
+                  <img src="/img/mock1.jpg" alt="image" class="image">
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+                  <!-- Image 5 -->
+      <div class="col">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="/img/V1.jpg" alt="image" class="image">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Image 6 -->
+            <div class="col">
+              <div class="thumbnail">
+                <div class="img-container">
+                  <img src="/img/v2.jpg" alt="image" class="image">
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+      <!-- Image 7 -->
+      <div class="col">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="/img/mock2.2.jpg" alt="image" class="image">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Image  8 -->
+            <div class="col">
+              <div class="thumbnail">
+                <div class="img-container">
+                  <img src="/img/mock2.jpg" alt="image" class="image">
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
